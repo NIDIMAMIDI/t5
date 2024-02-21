@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>String Reverse</h1>
+    <p>Given String : <span id = "str"></span></p>
+    <h3>Reverse of <span id = "str1"></span> is : <span id="rev"></span></h3>
+    <script>
+        var str = prompt("Enter a String : ")
+        var revstr = str.split("").reverse().join("")
+        document.getElementById("str").innerHTML = str.toLowerCase();
+        document.getElementById("str1").innerHTML = str.toLowerCase();
+        document.getElementById("rev").innerHTML = revstr.toLowerCase();
+        alert("Reverse String is : " + revstr);
+        console.log("Given String is : " + str);
+        console.log("Reverse of " + str + " is " + revstr);
+    </script>
+</body>
+</html>

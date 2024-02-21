@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum Element</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Maximum Element in a Array</h1>
+    <h3>Array is : <span id="arr"></span></h3>
+    <h4>Maximum element in <span id= "arr1"></span> is : <span id = "max"></span></h4>
+    <script>
+        var arr = new Array(10,15,0,7,20,3,5,410,2,5);
+        document.getElementById("arr").innerHTML = arr;
+        document.getElementById("arr1").innerHTML = arr;
+        var i, max = arr[0];
+        for(i = 1; i < arr.length;i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        document.getElementById("max").innerHTML = max;
+        console.log("Array is : " + arr);
+        console.log("Maximum element in "+ arr+ " is : " + max);
+    </script>
+</body>
+</html>

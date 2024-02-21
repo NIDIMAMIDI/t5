@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome or not</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Check Palindrome</h1>
+    <p>Given String : <span id = "pal"></span></p>
+    <h3 id="chck"></h3>
+    <script>
+        var str = prompt("Enter a String : ")
+        var revstr = str.split("").reverse().join("")
+        document.getElementById("pal").innerHTML = str.toLowerCase();
+        console.log("String is "+ str.toLowerCase());
+        if(str.toLowerCase() === revstr.toLowerCase()){
+            document.getElementById("chck").innerHTML = str.toUpperCase() + " is a Palindrome";
+            alert("Given String is a Palindrome");
+            console.log(str.toUpperCase()+"is a Palindrome");
+        }else{
+            document.getElementById("chck").innerHTML = str.toUpperCase() + " is not a Palindrome";
+            alert("Given String is not a Palindrome");
+            console.log(str.toUpperCase()+"is not a Palindrome");
+        }
+        
+    </script>
+</body>
+</html>

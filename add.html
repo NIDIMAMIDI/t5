@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Addition of Numbers</h1>
+    <p>Numbers are <span id="n1"></span> <span id="n2"></span></p>
+    <p> Addition of two numbers is : <span id="add"></span></p>
+    <script>    
+        var number1 = document.getElementById("n1");
+        var number2 = document.getElementById("n2");
+        var add = document.getElementById("add");
+        var num1 = Number(prompt("Enter a number : "));
+        var num2 = Number(prompt("Enter another Number : "));
+        var sum = num1 + num2;
+        number1.innerHTML = String(num1);
+        number2.innerHTML = String(num2);
+        add.innerHTML = String(sum);
+        console.log("Numbers are : ", num1, num2);
+        console.log("Sum is : ", sum);
+        alert("Sum is : " + sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Factorial of a number</h1>
+    <h3>Enter a number : <span id = "num"></span></h3>
+    <h4>Factorial of a <span id="num2"></span> is : <span id="fact"></span></h4>
+    <script>
+        var number = Number(prompt("Enter a Number : "));
+        var i, factorial = 1;
+        for(i = 1; i <= number; i++){
+            factorial = factorial * i;
+        }
+        document.getElementById("num").innerHTML = number;
+        document.getElementById("num2").innerHTML = number;
+        document.getElementById("fact").innerHTML = factorial;
+        alert("Factorial of "+ number + " is : " + factorial);
+        console.log("Number is : "+ number);
+        console.log("Factorial of "+ number+" is : "+factorial);
+    </script>
+</body>
+</html>
